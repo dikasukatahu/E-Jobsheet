@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruksi Kerja</title>
+    <style>
+        body {
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+        }
+
+        .header {
+            padding: 25px 30px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 85px;
+            border-bottom: 2px solid #000000;
+        }
+
+        .logo-kemenaker {
+            position: absolute;
+            left: 30px;
+            width: 85px;
+            height: 85px;
+            object-fit: contain;
+        }
+
+        .logo-bbpvp {
+            position: absolute;
+            right: 30px;
+            width: 85px;
+            height: 85px;
+            object-fit: contain;
+        }
+
+        .header-text {
+            text-align: center;
+            width: 100%;
+            padding: 0 110px; 
+            box-sizing: border-box;
+        }
+
+        .header h1 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+            text-transform: uppercase;
+            margin: 0 0 6px 0;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
+        }
+
+        .header h2 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
+        }
+
+        .hero-section {
+            width: 100%;
+            height: 480px;
+            background-image: url('gambarinstruksi.png');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 2px solid #000000;
+        }
+
+        .title-section {
+            text-align: center;
+            padding: 25px 10px 10px 10px;
+        }
+
+        .title-section h4 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #000000;
+            display: inline-block;
+            border-bottom: 4px solid #000000;
+            padding-bottom: 5px;
+            margin: 0;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px 30px 50px 30px;
+        }
+
+        .content-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .weld-illustration-box {
+            width: 100%;
+            height: 110px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff;
+            border: 2px solid #000000;
+            border-radius: 6px;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        .btn-desc {
+            font-size: 14px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 10px;
+            min-height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: underline;
+        }
+
+        .text-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .action-click {
+            display: inline-block;
+            background-color: #0056b3;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 6px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .action-click:hover {
+            background-color: #003d82;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <img src="Logo_Kementerian_Ketenagakerjaan_(2016).png" alt="Logo Kemenaker" class="logo-kemenaker">
+            
+            <div class="header-text">
+                <h1>Kementerian Ketenagakerjaan Republik Indonesia</h1>
+                <h2>SENTRA TERPADU INTEN SOEWONO</h2>
+            </div>
+
+            <img src="logomp42.png" alt="Logo BBPVP" class="logo-bbpvp">
+        </header>
+
+        <div class="hero-section"></div>
+
+        <div class="title-section">
+            <h4>Instruksi Kerja</h4>
+        </div>
+
+        <main class="button-grid">
+            <div class="content-card">
+                <div class="weld-illustration-box">
+                    <svg width="100" height="50" viewBox="0 0 100 50">
+                        <rect x="10" y="30" width="80" height="10" fill="#a0a0a0" stroke="#333" stroke-width="1.5"/>
+                        <path d="M15,30 Q20,20 25,30 Q30,20 35,30 Q40,20 45,30 Q50,20 55,30 Q60,20 65,30 Q70,20 75,30 Q80,20 85,30" fill="none" stroke="#555" stroke-width="2.5" />
+                    </svg>
+                </div>
+                <div class="text-group">
+                    <div class="btn-desc">Pengelasan Rigi - Rigi</div>
+                    <button class="action-click" onclick="bukaFile(0)">Klik Disini</button>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <div class="weld-illustration-box">
+                    <svg width="100" height="60" viewBox="0 0 100 60">
+                        <g transform="rotate(45 50 30)">
+                            <rect x="15" y="27" width="40" height="6" fill="#a0a0a0" stroke="#333" stroke-width="1.5"/>
+                            <rect x="55" y="10" width="6" height="40" fill="#a0a0a0" stroke="#333" stroke-width="1.5"/>
+                            <path d="M55,27 Q49,21 55,21 Q61,21 55,27" fill="#777" stroke="#333"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="text-group">
+                    <div class="btn-desc">1F - Plat to Plat</div>
+                    <button class="action-click" onclick="bukaFile(1)">Klik Disini</button>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <div class="weld-illustration-box">
+                    <svg width="100" height="60" viewBox="0 0 100 60">
+                        <rect x="15" y="40" width="70" height="8" fill="#a0a0a0" stroke="#333" stroke-width="1.5"/>
+                        <rect x="46" y="10" width="8" height="30" fill="#a0a0a0" stroke="#333" stroke-width="1.5"/>
+                        <path d="M46,40 Q40,33 46,33 Z" fill="#777" stroke="#333"/>
+                        <path d="M54,40 Q60,33 54,33 Z" fill="#777" stroke="#333"/>
+                    </svg>
+                </div>
+                <div class="text-group">
+                    <div class="btn-desc">2F - Plat to Plat</div>
+                    <button class="action-click" onclick="bukaFile(2)">Klik Disini</button>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <div class="weld-illustration-box">
+                    <svg width="100" height="60" viewBox="0 0 100 60">
+                        <g transform="rotate(90 50 30)">
+                            <rect x="20" y="37" width="60" height="8" fill="#a0a0a0" stroke="#333" stroke-width="1.5"/>
+                            <rect x="46" y="13" width="8" height="24" fill="#a0a0a0" stroke="#333" stroke-width="1.5"/>
+                            <path d="M46,37 Q41,31 46,31 Z" fill="#777" stroke="#333"/>
+                            <path d="M54,37 Q59,31 54,31 Z" fill="#777" stroke="#333"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="text-group">
+                    <div class="btn-desc">3F - Plat to Plat</div>
+                    <button class="action-click" onclick="bukaFile(3)">Klik Disini</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const fileData = [
+            "RIGI - RIGI (INSTRUKSI).pdf",
+            "1F (INSTRUKSI).pdf",
+            "2F (INSTRUKSI).pdf",
+            "3F (INSTRUKSI).pdf"
+        ];
+
+        function bukaFile(index) {
+            const namaFile = fileData[index];
+            window.open(namaFile, '_blank');
+        }
+    </script>
+</body>
+</html>

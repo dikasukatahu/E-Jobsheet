@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Jobsheet SMAW - BBPVP Serang</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #f3f3f3;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 4px solid #000;
+        }
+
+        .hero-section {
+            width: 100%;
+            height: 600px; 
+            background-image: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1000&auto=format&fit=crop');
+            background-repeat: no-repeat;
+            background-color: #000000; 
+            background-position: center;
+            border-bottom: 5px solid #000;
+        }
+
+        .title-section {
+            text-align: center;
+            padding: 25px 10px 15px 10px;
+        }
+
+        .title-section h4 {
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #000;
+            display: inline-block;
+            border-bottom: 3px solid #000;
+            padding-bottom: 5px;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px 40px 50px 40px;
+        }
+
+        .content-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #000;
+        }
+
+        .file-icon {
+            width: 90px;
+            height: 115px;
+            position: relative;
+            margin-bottom: 15px;
+            background-color: #ffffff;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            clip-path: polygon(0 0, 65px 0, 90px 25px, 90px 100%, 0 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: hidden;
+        }
+
+        .file-icon::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 25px;
+            height: 25px;
+            background-color: rgba(0,0,0,0.15);
+            border-bottom-left-radius: 4px;
+            border-left: 1px solid rgba(0,0,0,0.2);
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+        }
+
+        .file-label {
+            width: 100%;
+            padding: 8px 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .file-lines {
+            position: absolute;
+            top: 35px;
+            left: 15px;
+            right: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .file-lines span {
+            height: 4px;
+            background-color: #e0e0e0;
+            border-radius: 2px;
+            width: 100%;
+        }
+        .file-lines span:last-child {
+            width: 60%;
+        }
+
+        .icon-dwg {
+            border-color: #f57c00;
+        }
+        .icon-dwg .file-label {
+            background-color: #e65100;
+        }
+        .icon-dwg .file-lines span {
+            background-color: rgba(230, 81, 0, 0.2);
+        }
+        .icon-pdf {
+            border-color: #ef5350;
+        }
+        .icon-pdf .file-label {
+            background-color: #d32f2f; 
+        }
+        .icon-pdf .file-lines span {
+            background-color: rgba(211, 47, 47, 0.15);
+        }
+        .icon-mp4 {
+            border-color: #29b6f6;
+        }
+        .icon-mp4 .file-label {
+            background-color: #0288d1;
+        }
+
+        .icon-mp4 .play-indicator {
+            position: absolute;
+            top: 40px;
+            left: 55%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-left: 18px solid #0288d1;
+            opacity: 0.7;
+        }
+
+        .btn-desc {
+            font-size: 15px;
+            line-height: 1.3;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 12px;
+            min-height: 40px;
+            color: #000;
+        }
+
+        .action-click {
+            background-color: #0056b3;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+            display: inline-block;
+        }
+
+        .action-click:hover {
+            background-color: #003d82;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="hero-section"></div>
+
+        <div class="title-section">
+            <h4>E- Jobsheet SMAW</h4>
+        </div>
+
+        <div class="button-grid">
+            
+            <div class="content-card">
+                <div class="file-icon icon-dwg">
+                    <div class="file-lines">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="file-label">DWG</div>
+                </div>
+                <div class="btn-desc">Untuk Melihat<br>Gambar Kerja</div>
+                <a href="dwg.html" class="action-click">klik disini</a>
+            </div>
+
+            <div class="content-card">
+                <div class="file-icon icon-pdf">
+                    <div class="file-lines">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="file-label">PDF</div>
+                </div>
+                <div class="btn-desc">Untuk Melihat<br>Instruksi Kerja</div>
+                <a href="pdf.html" class="action-click">klik disini</a>
+            </div>
+
+            <div class="content-card">
+                <div class="file-icon icon-mp4">
+                    <div class="play-indicator"></div>
+                    <div class="file-label">MP4</div>
+                </div>
+                <div class="btn-desc">Untuk Melihat<br>Video Referensi</div>
+                <a href="mp4.html" class="action-click">klik disini</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
