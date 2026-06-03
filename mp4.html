@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gambar Kerja - BBPVP Serang</title>
+    <title>VIDEO REVERENSI</title>
     <style>
         body {
             background-color: #000000;
@@ -166,33 +166,74 @@
             background-color: #003d82;
             transform: scale(1.05);
         }
-    
+
         @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-                position: static;
-                padding: 20px;
-                text-align: center;
-            }
-            .logo-kkemnaker {
-                position: static;
-                margin-bottom: 10px;
-            }
-            .header-text {
-                padding: 0;
-            }
             .hero-section {
-                height: 250px;
+                height: 350px;
             }
             .button-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 20px;
+                grid-template-columns: repeat(2, 1fr); 
+                padding: 20px;
+            }
+            .header h1, .header h2 {
+                font-size: 15px;
+            }
+            .header-text {
+                padding: 0 100px;
             }
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 576px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 15px 10px;
+                display: flex;
+                flex-direction: row; 
+                justify-content: space-between;
+                align-items: center;
+                min-height: 70px;
+            }
+
+            .logo-kemenaker, .logo-bbpvp {
+                position: static; 
+                width: 45px;
+                height: 45px;
+                flex-shrink: 0;
+            }
+
+            .header-text {
+                flex-grow: 1;
+                padding: 0 8px; 
+            }
+
+            .header h1 {
+                font-size: 10px;
+                margin-bottom: 2px;
+            }
+
+            .header h2 {
+                font-size: 10px;
+            }
+
+            .hero-section {
+                height: 200px; 
+            }
+
+            .title-section h4 {
+                font-size: 22px;
+            }
+
             .button-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr; 
+                gap: 25px;
+                padding: 20px 15px;
+            }
+
+            .weld-illustration-box {
+                height: 120px;
             }
         }
     </style>
