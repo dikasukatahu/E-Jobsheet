@@ -199,6 +199,35 @@
             box-shadow: 0 6px 12px rgba(0,0,0,0.3);
             transform: scale(1.05);
         }
+        
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                position: static;
+                padding: 20px;
+                text-align: center;
+            }
+            .logo-kkemnaker {
+                position: static;
+                margin-bottom: 10px;
+            }
+            .header-text {
+                padding: 0;
+            }
+            .hero-section {
+                height: 250px;
+            }
+            .button-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .button-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
