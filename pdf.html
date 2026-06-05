@@ -261,19 +261,6 @@
         <main class="button-grid">
             <div class="content-card">
                 <div class="weld-illustration-box">
-                    <svg width="100" height="50" viewBox="0 0 100 50">
-                        <rect x="10" y="30" width="80" height="10" fill="#a0a0a0" stroke="#333" stroke-width="1.5"/>
-                        <path d="M15,30 Q20,20 25,30 Q30,20 35,30 Q40,20 45,30 Q50,20 55,30 Q60,20 65,30 Q70,20 75,30 Q80,20 85,30" fill="none" stroke="#555" stroke-width="2.5" />
-                    </svg>
-                </div>
-                <div class="text-group">
-                    <div class="btn-desc">Pengelasan Rigi - Rigi</div>
-                    <button class="action-click" onclick="bukaFile(0)">Klik Disini</button>
-                </div>
-            </div>
-
-            <div class="content-card">
-                <div class="weld-illustration-box">
                     <svg width="100" height="60" viewBox="0 0 100 60">
                         <g transform="rotate(45 50 30)">
                             <rect x="15" y="27" width="40" height="6" fill="#a0a0a0" stroke="#333" stroke-width="1.5"/>
@@ -284,7 +271,7 @@
                 </div>
                 <div class="text-group">
                     <div class="btn-desc">1F - Plat to Plat</div>
-                    <button class="action-click" onclick="bukaFile(1)">Klik Disini</button>
+                    <button class="action-click" onclick="bukaFile(0)">Klik Disini</button>
                 </div>
             </div>
 
@@ -299,7 +286,7 @@
                 </div>
                 <div class="text-group">
                     <div class="btn-desc">2F - Plat to Plat</div>
-                    <button class="action-click" onclick="bukaFile(2)">Klik Disini</button>
+                    <button class="action-click" onclick="bukaFile(1)">Klik Disini</button>
                 </div>
             </div>
 
@@ -316,6 +303,23 @@
                 </div>
                 <div class="text-group">
                     <div class="btn-desc">3F - Plat to Plat</div>
+                    <button class="action-click" onclick="bukaFile(2)">Klik Disini</button>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <div class="weld-illustration-box">
+                    <svg width="100" height="60" viewBox="0 0 100 60">
+                        <g transform="scale(1, -1) translate(0, -60)">
+                            <rect x="15" y="40" width="70" height="8" fill="#a0a0a0" stroke="#333" stroke-width="1.5"/>
+                            <rect x="46" y="10" width="8" height="30" fill="#a0a0a0" stroke="#333" stroke-width="1.5"/>
+                            <path d="M46,40 Q40,33 46,33 Z" fill="#777" stroke="#333"/>
+                            <path d="M54,40 Q60,33 54,33 Z" fill="#777" stroke="#333"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="text-group">
+                    <div class="btn-desc">4F - Plat to Plat</div>
                     <button class="action-click" onclick="bukaFile(3)">Klik Disini</button>
                 </div>
             </div>
@@ -323,11 +327,12 @@
     </div>
 
     <script>
+       
         const fileData = [
-            "RIGI - RIGI (INSTRUKSI).pdf",
             "1F (INSTRUKSI).pdf",
             "2F (INSTRUKSI).pdf",
-            "3F (INSTRUKSI).pdf"
+            "3F (INSTRUKSI).pdf",
+            "4F (INSTRUKSI).pdf"
         ];
 
         function bukaFile(index) {
