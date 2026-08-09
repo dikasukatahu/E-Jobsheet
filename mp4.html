@@ -270,7 +270,7 @@
                 </div>
                 <div class="text-group">
                     <div class="btn-desc">Persiapan Pengelasan</div>
-                    <button class="action-click" onclick="bukaDrive(0)">Klik Disini</button>
+                    <button class="action-click" onclick="bukaYoutube(0)">Klik Disini</button>
                 </div>
             </div>
 
@@ -288,7 +288,7 @@
                 </div>
                 <div class="text-group">
                     <div class="btn-desc">Setting Parameter Pengelasan</div>
-                    <button class="action-click" onclick="bukaDrive(1)">Klik Disini</button>
+                    <button class="action-click" onclick="bukaYoutube(1)">Klik Disini</button>
                 </div>
             </div>
 
@@ -307,21 +307,21 @@
                 </div>
                 <div class="text-group">
                     <div class="btn-desc">Proses Pengelasan</div>
-                    <button class="action-click" onclick="bukaDrive(2)">Klik Disini</button>
+                    <button class="action-click" onclick="bukaYoutube(2)">Klik Disini</button>
                 </div>
             </div>
         </main>
     </div>
 
     <script>
-        const driveLinks = [
-            "https://drive.google.com/file/d/16jJ2ilgBC0XpjJbnsvOSUPgFSJvnosCU/view?usp=drive_link",
-            "https://drive.google.com/file/d/1SUySR8ovD5oC5vQqm4kQXWzqpbAg7kRj/view?usp=drive_link",
-            "https://drive.google.com/file/d/1zl0S_cv-9vsQ-oM6A97XBfGYC440JtRh/view?usp=drive_link"
+        const youtubeLinks = [
+            "https://youtu.be/9UKmgh2jBMo?si=zRLhPp4y6tF7_lO8", 
+            "https://youtu.be/lZzFeqCQtpE?si=cgEGZkeJ3JUc2azi", 
+            "https://youtu.be/CjSKuF17Cdc?si=auqfvwWAsZm89lNB"  
         ];
 
-        function bukaDrive(index) {
-            const urlTujuan = driveLinks[index];
+        function bukaYoutube(index) {
+            const urlTujuan = youtubeLinks[index];
             window.open(urlTujuan, '_blank');
         }
     </script>
